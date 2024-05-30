@@ -4,7 +4,7 @@ Here's a beautiful README for your Task List Chrome Extension that includes all 
 
 # Task List Chrome Extension
 
-![Task List Icon](icons/icon128.png)
+![Task List Icon](screenshots/icon16_128x128.png)
 
 ## Overview
 
@@ -19,8 +19,7 @@ The Task List Chrome Extension is a simple yet powerful tool to manage your dail
 - **Task Completion Tracking**: Keep track of the number of tasks completed and incomplete tasks.
 
 ## Screenshots
-
-![Screenshot](IMG1.png)
+![Screenshots](screenshots/IMG1.png)
 
 ## Installation
 
