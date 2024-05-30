@@ -20,7 +20,7 @@ The Task List Chrome Extension is a simple yet powerful tool to manage your dail
 
 ## Screenshots
 
-![Screenshot](screenshot.png)
+![Screenshot](IMG1.png)
 
 ## Installation
 
