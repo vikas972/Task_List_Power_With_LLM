@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Pomodoro Task List</title>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task List</h1>
+        <div class="task-controls">
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div id="taskSummary">
+            <p>Tasks Completed: <span id="completedCount">0</span></p>
+            <p>Tasks Incomplete: <span id="incompleteCount">0</span></p>
+        </div>
+        <div id="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <button id="startTimerButton">Start Timer</button>
+        <button id="stopTimerButton">Stop Timer</button>
+        <div id="optimizationContainer">
+            <textarea id="userInput" placeholder="What do you want to do with the task list?"></textarea>
+            <button id="sendToLLMButton">Send to LLM</button>
+            <div id="optimizedTasksOutput"></div>
+        </div>
+        <div id="linkContainer">
+            <a href="options.html" target="_blank">Set API Key and Model</a>
+        </div>
+    </div>
+    <script src="../js/popup.js"></script>
+</body>
+</html>

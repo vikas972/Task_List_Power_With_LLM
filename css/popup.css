@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.task-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#timer {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.3s;
+}
+
+#taskList li .edit {
+    display: none;
+}
+
+#taskList li.editMode .edit {
+    display: block;
+}
+
+#taskList li.editMode .view {
+    display: none;
+}
+
+#taskSummary {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes timerFlash {
+    0% { background-color: white; }
+    50% { background-color: red; }
+    100% { background-color: white; }
+}
+
+.flash {
+    animation: timerFlash 1s infinite;
+}
+
+#optimizationContainer {
+    margin-top: 20px;
+}
+
+#userInput {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+#sendToLLMButton {
+    background-color: #2196F3;
+}
+
+#sendToLLMButton:hover {
+    background-color: #1976D2;
+}
+
+#optimizedTasksOutput {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    white-space: pre-wrap; /* Ensures the text is wrapped */
+    word-wrap: break-word; /* Ensures long words are wrapped */
+}
+
+#apiContainer {
+    margin-top: 20px;
+}
+
+#apiToken, #modelName {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
